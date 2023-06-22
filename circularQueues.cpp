@@ -59,7 +59,11 @@ public:
 
     void display() {
         int front_position = front, rear_position = rear;
-
+        /*cek apakah Queue kosong*/
+        if (front == -1) {
+            cout << "Queue is empty\n";
+            return;
+        }
     }
 };
 
