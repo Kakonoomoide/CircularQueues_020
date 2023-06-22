@@ -58,7 +58,9 @@ public:
     }
 
     void display() {
-        int front_position = front, rear_position = rear;
+        int front_position = front;
+        int rear_position = rear;
+
         /*cek apakah Queue kosong*/
         if (front == -1) {
             cout << "Queue is empty\n";
@@ -111,7 +113,30 @@ int main(){
             cin >> ch;
             cout << endl;
 
-           
+            switch (ch) {
+            case'1': {
+                q.insert();
+                break;
+            }
+            case'2': {
+                q.remove();
+                break;
+            }
+            case'3': {
+                q.display();
+                break;
+            }
+            case'4': {
+                return 0;
+            }
+            default: {
+                cout << "invalid option!!" << endl;
+            }
+            }
+        }
+        catch (exception& e) {
+            cout << "check for the values entered" << endl;
         }
     }
+    return 0;
 }
