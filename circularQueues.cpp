@@ -36,7 +36,11 @@ public:
     }
 
     void remove() {
-
+        /*cek apakah Queue kosong*/
+        if (front == -1) {
+            cout << "Queue underflow\n";
+            return;
+        }
     }
 };
 
