@@ -48,6 +48,11 @@ public:
             front = -1;
             rear = -1;
         }
+        else{
+            /*jika element yang di hapus(front) berada di akhir aray*/
+            if (front == max - 1)
+                front = 0;
+        }
     }
 };
 
