@@ -7,6 +7,11 @@ private:
     int queue_array[5];
     
 public:
+    Queues() {
+        front = -1;
+        rear = -1;
+    }
+
     void insert() {
         int num;
         cout << "enter your num: ";
@@ -32,6 +37,7 @@ public:
             else
                 rear = rear + 1;
         }
+
         queue_array[rear] = num;
     }
 
@@ -106,8 +112,8 @@ int main(){
         try {
             cout << "menu" << endl;
             cout << "1. implement insert opration" << endl;
-            cout << "1. implement delete opration" << endl;
-            cout << "1. display values" << endl;
+            cout << "2. implement delete opration" << endl;
+            cout << "3. display values" << endl;
             cout << "4. exit" << endl;
             cout << "enter your choice (1-4): ";
             cin >> ch;
