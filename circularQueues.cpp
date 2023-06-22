@@ -24,6 +24,11 @@ public:
             front = 0;
             rear = 0;
         }
+
+        else{
+            if (rear == max -1)
+                er
+        }
     }
 };
 
