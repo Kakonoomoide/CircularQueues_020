@@ -26,9 +26,13 @@ public:
         }
 
         else{
-            if (rear == max -1)
-                er
+            /*jika di akhir (circular array) dan untuk increment rear +1*/
+            if (rear == max - 1)
+                rear = 0;
+            else
+                rear = rear + 1;
         }
+        queue_array[rear] = num;
     }
 };
 
