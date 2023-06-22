@@ -13,12 +13,17 @@ public:
         cin >> num;
         cout << endl;
 
-        /*cek apakah antrin sudah penuh*/
+        /*cek apakah Qeueu sudah penuh*/
         if ((front == 0 && rear == max - 1) || (front == rear + 1)) {
             cout << "\nQueue overflow\n";
             cout << endl;
         }
 
+        /*cek apakah Queue kosong*/
+        if (front == -1) {
+            front = 0;
+            rear = 0;
+        }
     }
 };
 
