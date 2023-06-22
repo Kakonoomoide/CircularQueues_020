@@ -80,7 +80,7 @@ public:
             /*jika front > rear -> front hingga akhir array*/
             while (front_position <= max -1){
                 cout << queue_array[front_position] << "  ";
-                front_position;
+                front_position++;
             }
 
             front_position = 0;
@@ -88,7 +88,7 @@ public:
             /*awal array hingga akhir rear*/
             while (front_position <= rear_position){
                 cout << queue_array[front_position] << "  ";
-                front_position;
+                front_position++;
             }
 
             cout << endl;
@@ -99,4 +99,19 @@ public:
 int main(){
     Queues q;
     char ch;
+
+    while (true){
+        try {
+            cout << "menu" << endl;
+            cout << "1. implement insert opration" << endl;
+            cout << "1. implement delete opration" << endl;
+            cout << "1. display values" << endl;
+            cout << "4. exit" << endl;
+            cout << "enter your choice (1-4): ";
+            cin >> ch;
+            cout << endl;
+
+           
+        }
+    }
 }
