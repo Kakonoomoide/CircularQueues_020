@@ -68,16 +68,17 @@ public:
         cout << "\nelement in the queue are: \n";
         
         /*jika front <= rear -> front hingga rear*/
-        if (front_position<=rear_position) {
+        if (front_position <= rear_position) {
             while (front_position <= rear_position){
                 cout << queue_array[front_position] << "  ";
                 front_position++;
             }
+            cout << endl;
         }
         
         else{
             /*jika front > rear -> front hingga akhir array*/
-            while (front_position<=max -1){
+            while (front_position <= max -1){
                 cout << queue_array[front_position] << "  ";
                 front_position;
             }
@@ -85,7 +86,7 @@ public:
             front_position = 0;
 
             /*awal array hingga akhir rear*/
-            while (front_position<=rear_position){
+            while (front_position <= rear_position){
                 cout << queue_array[front_position] << "  ";
                 front_position;
             }
@@ -96,5 +97,6 @@ public:
 };
 
 int main(){
-    
+    Queues q;
+    char ch;
 }
